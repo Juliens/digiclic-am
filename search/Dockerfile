@@ -1,5 +1,5 @@
 FROM php
-RUN apt-get update && apt-get install -y libssl-dev \
+RUN apt-get update && apt-get install -y libssl-dev git \
     && docker-php-ext-install mbstring bcmath sockets \
     && pecl install mongo
 WORKDIR /root/symfony
