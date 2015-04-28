@@ -1,0 +1,17 @@
+db:
+    image: mongo
+    volumes:
+        - ./db:/data/db   
+    command: --smallfiles
+
+clients:
+    build: ./clients
+        
+search:
+    build: ./search
+
+share:
+    build: ./share
+
+videos:
+    build: ./videos
