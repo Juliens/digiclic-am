@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="row">
+        {% for category in categories %}
+            <div class="col-xs-5 col-md-2">
+                <a href="{{ path('category', {category:category.id}) }}">
+                <img src="{{category.image}}" class="center-block img-responsive" />
+                <button type="button" class="btn btn-primary btn-lg btn-block btn-sm">{{ category.nom }}</button></a>
+        </div>
+        {% endfor %}
+</div>
+
+
+
+		
+{% endblock %}

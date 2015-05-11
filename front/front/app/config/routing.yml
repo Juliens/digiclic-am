@@ -1,0 +1,8 @@
+digiclic_front_archive_media:
+    resource: "@DigiclicFrontArchiveMediaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

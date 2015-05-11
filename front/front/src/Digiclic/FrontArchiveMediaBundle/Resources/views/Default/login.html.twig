@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<!--[if IE 8]>
+		<html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="fr-FR">
+	<![endif]-->
+	<!--[if !(IE 8) ]><!-->
+		<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-FR">
+	<!--<![endif]-->
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Archives media.org &rsaquo; Se connecter</title>
+	<link rel='stylesheet' id='buttons-css'  href='http://archives-media.com/wp-includes/css/buttons.min.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://archives-media.com/wp-includes/css/dashicons.min.css?ver=4.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='login-css'  href='http://archives-media.com/wp-admin/css/login.min.css?ver=4.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://archives-media.com/wp-includes/js/jquery/jquery.js?ver=1.11.1'></script>
+<script type='text/javascript' src='http://archives-media.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<style type="text/css">
+			.login h1 a{background-image:url(http://archives-media.com/wp-content/medias/2015/04/admin.png) !important;}
+		</style><meta name='robots' content='noindex,follow' />
+	</head>
+	<body class="login login-action-login wp-core-ui  locale-fr-fr">
+	<div id="login">
+		<h1><a href="http://archives-media.com" title="Archives media.org" tabindex="-1">Archives media.org</a></h1>
+	
+<form name="loginform" id="loginform" action="{{ path("security_check") }}" method="post">
+	<p>
+		<label for="username">Identifiant<br />
+		<input type="text" name="_username" id="username" class="input" value="" size="20" /></label>
+	</p>
+	<p>
+		<label for="password">Mot de passe<br />
+		<input type="password" name="_password" id="password" class="input" value="" size="20" /></label>
+	</p>
+	<p class="submit">
+		<input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Se connecter" />
+	</p>
+</form>
+
+<p id="nav">
+	<a href="http://archives-media.com/wp-login.php?action=lostpassword" title="Récupération de mot de passe">Mot de passe oublié&nbsp;?</a>
+</p>
+
+<script type="text/javascript">
+function wp_attempt_focus(){
+setTimeout( function(){ try{
+d = document.getElementById('user_login');
+d.focus();
+d.select();
+} catch(e){}
+}, 200);
+}
+
+wp_attempt_focus();
+if(typeof wpOnload=='function')wpOnload();
+</script>
+
+	<p id="backtoblog"><a href="http://archives-media.com/" title="Êtes-vous perdu(e)&nbsp;?">&larr; Retour sur Archives media.org</a></p>
+	
+	</div>
+
+	
+		<div class="clear"></div>
+	</body>
+	</html>
+	

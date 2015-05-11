@@ -1,0 +1,212 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AbstractToken	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^abstract class AbstractToken implements TokenInterface$/;"	c
+AcmeDemoBundle	src/Acme/DemoBundle/AcmeDemoBundle.php	/^class AcmeDemoBundle extends Bundle$/;"	c
+AcmeDemoExtension	src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php	/^class AcmeDemoExtension extends Extension$/;"	c
+AppBundle	src/AppBundle/AppBundle.php	/^class AppBundle extends Bundle$/;"	c
+Client	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^class Client implements UserInterface$/;"	c
+ClientsProvider	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^class ClientsProvider implements UserProviderInterface$/;"	c
+ClientsService	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^class ClientsService$/;"	c
+Configuration	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/Configuration.php	/^class Configuration implements ConfigurationInterface$/;"	c
+ContactType	src/Acme/DemoBundle/Form/ContactType.php	/^class ContactType extends AbstractType$/;"	c
+ControllerListener	src/Acme/DemoBundle/EventListener/ControllerListener.php	/^class ControllerListener$/;"	c
+DaoAuthenticationProvider	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^class DaoAuthenticationProvider extends UserAuthenticationProvider$/;"	c
+DefaultController	src/AppBundle/Controller/DefaultController.php	/^class DefaultController extends Controller$/;"	c
+DefaultController	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^class DefaultController extends Controller$/;"	c
+DefaultControllerTest	src/AppBundle/Tests/Controller/DefaultControllerTest.php	/^class DefaultControllerTest extends WebTestCase$/;"	c
+DefaultControllerTest	src/Digiclic/FrontArchiveMediaBundle/Tests/Controller/DefaultControllerTest.php	/^class DefaultControllerTest extends WebTestCase$/;"	c
+DemoController	src/Acme/DemoBundle/Controller/DemoController.php	/^class DemoController extends Controller$/;"	c
+DemoControllerTest	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^class DemoControllerTest extends WebTestCase$/;"	c
+DemoExtension	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^class DemoExtension extends \\Twig_Extension$/;"	c
+DigiclicFrontArchiveMediaBundle	src/Digiclic/FrontArchiveMediaBundle/DigiclicFrontArchiveMediaBundle.php	/^class DigiclicFrontArchiveMediaBundle extends Bundle$/;"	c
+DigiclicFrontArchiveMediaExtension	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/DigiclicFrontArchiveMediaExtension.php	/^class DigiclicFrontArchiveMediaExtension extends Extension$/;"	c
+HelloWorldCommand	src/Acme/DemoBundle/Command/HelloWorldCommand.php	/^class HelloWorldCommand extends Command$/;"	c
+MessageDigestPasswordEncoder	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^class MessageDigestPasswordEncoder extends BasePasswordEncoder$/;"	c
+SecuredController	src/Acme/DemoBundle/Controller/SecuredController.php	/^class SecuredController extends Controller$/;"	c
+UserPasswordEncoder	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php	/^class UserPasswordEncoder implements UserPasswordEncoderInterface$/;"	c
+UserPasswordValidator	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^class UserPasswordValidator extends ConstraintValidator$/;"	c
+WelcomeController	src/Acme/DemoBundle/Controller/WelcomeController.php	/^class WelcomeController extends Controller$/;"	c
+__construct	src/Acme/DemoBundle/EventListener/ControllerListener.php	/^    public function __construct(DemoExtension $extension)$/;"	f
+__construct	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    public function __construct(\\Twig_LoaderInterface $loader)$/;"	f
+__construct	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    public function __construct($email, $password, $id)$/;"	f
+__construct	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^    public function __construct($base_path, $security_context)$/;"	f
+__construct	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^    public function __construct(UserProviderInterface $userProvider, UserCheckerInterface $userChecker, $providerKey, EncoderFactoryInterface $encoderFactory, $hideUserNotFoundExceptions = true)$/;"	f
+__construct	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function __construct(array $roles = array())$/;"	f
+__construct	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^    public function __construct($algorithm = 'sha512', $encodeHashAsBase64 = true, $iterations = 5000)$/;"	f
+__construct	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php	/^    public function __construct(EncoderFactoryInterface $encoderFactory)$/;"	f
+__construct	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^    public function __construct(SecurityContextInterface $securityContext, EncoderFactoryInterface $encoderFactory)$/;"	f
+__toString	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function __toString()$/;"	f
+algorithm	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^        $this->algorithm = $algorithm;$/;"	v
+algorithm	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^    private $algorithm;$/;"	v
+attributes	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^        $this->attributes = $attributes;$/;"	v
+attributes	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    private $attributes = array();$/;"	v
+authenticated	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^        $this->authenticated = (bool) $authenticated;$/;"	v
+authenticated	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    private $authenticated = false;$/;"	v
+base_path	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^        $this->base_path = $base_path;$/;"	v
+base_path	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^    private $base_path;$/;"	v
+buildForm	src/Acme/DemoBundle/Form/ContactType.php	/^    public function buildForm(FormBuilderInterface $builder, array $options)$/;"	f
+categories	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^            $categories = array();$/;"	v
+categories	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $categories = $this->get('clients_service')->getCategories();$/;"	v
+categoryAction	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^    public function categoryAction($category)$/;"	f
+category_object	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $category_object = $this->get('clients_service')->getCategory($category);$/;"	v
+changed	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^                $changed = $this->hasUserChanged($user);$/;"	v
+changed	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^                $changed = true;$/;"	v
+changed	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^            $changed = (string) $this->user !== (string) $user;$/;"	v
+changed	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^            $changed = false;$/;"	v
+changed	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^            $changed = true;$/;"	v
+checkAuthentication	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^    protected function checkAuthentication(UserInterface $user, UsernamePasswordToken $token)$/;"	f
+class	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^            $class = ClassUtils::getUserClass($class);$/;"	v
+class	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $class = get_class($this->controller[0]);$/;"	v
+class	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^        $class = get_class($this);$/;"	v
+class	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^        $class = substr($class, strrpos($class, '\\\\') + 1);$/;"	v
+client	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $client = static::createClient();$/;"	v
+client	src/AppBundle/Tests/Controller/DefaultControllerTest.php	/^        $client = static::createClient();$/;"	v
+client	src/Digiclic/FrontArchiveMediaBundle/Tests/Controller/DefaultControllerTest.php	/^        $client = static::createClient();$/;"	v
+client_id	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^        $this->client_id = $security_context->getToken()->getUser()->getId();$/;"	v
+client_id	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^    private $client_id;$/;"	v
+code	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $code = file($r->getFilename());$/;"	v
+config	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/DigiclicFrontArchiveMediaExtension.php	/^        $config = $this->processConfiguration($configuration, $configs);$/;"	v
+configuration	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/DigiclicFrontArchiveMediaExtension.php	/^        $configuration = new Configuration();$/;"	v
+configure	src/Acme/DemoBundle/Command/HelloWorldCommand.php	/^    protected function configure()$/;"	f
+contactAction	src/Acme/DemoBundle/Controller/DemoController.php	/^    public function contactAction(Request $request)$/;"	f
+controller	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $controller = highlight_string("<?php".$this->getControllerCode(), true);$/;"	v
+controller	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $controller = str_replace('<span style="color: #0000BB">&lt;?php&nbsp;&nbsp;&nbsp;&nbsp;<\/span>', '&nbsp;&nbsp;&nbsp;&nbsp;', $controller);$/;"	v
+controller	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $this->controller = $controller;$/;"	v
+controller	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    protected $controller;$/;"	v
+crawler	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $crawler = $client->click($link);$/;"	v
+crawler	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $crawler = $client->followRedirect();$/;"	v
+crawler	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $crawler = $client->request('GET', '\/demo\/hello\/Fabien');$/;"	v
+crawler	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $crawler = $client->request('GET', '\/demo\/secured\/hello\/World');$/;"	v
+crawler	src/AppBundle/Tests/Controller/DefaultControllerTest.php	/^        $crawler = $client->request('GET', '\/app\/example');$/;"	v
+crawler	src/Digiclic/FrontArchiveMediaBundle/Tests/Controller/DefaultControllerTest.php	/^        $crawler = $client->request('GET', '\/hello\/Fabien');$/;"	v
+currentUser	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^        $currentUser = $token->getUser();$/;"	v
+digest	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^            $digest = hash($this->algorithm, $digest.$salted, true);$/;"	v
+digest	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^        $digest = hash($this->algorithm, $salted, true);$/;"	v
+email	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^        $this->email = $email;$/;"	v
+email	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    private $email;$/;"	v
+encodeHashAsBase64	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^        $this->encodeHashAsBase64 = $encodeHashAsBase64;$/;"	v
+encodeHashAsBase64	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^    private $encodeHashAsBase64;$/;"	v
+encodePassword	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^    public function encodePassword($raw, $salt)$/;"	f
+encodePassword	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php	/^    public function encodePassword(UserInterface $user, $plainPassword)$/;"	f
+encoder	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php	/^        $encoder = $this->encoderFactory->getEncoder($user);$/;"	v
+encoder	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^        $encoder = $this->encoderFactory->getEncoder($user);$/;"	v
+encoderFactory	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^        $this->encoderFactory = $encoderFactory;$/;"	v
+encoderFactory	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^    private $encoderFactory;$/;"	v
+encoderFactory	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php	/^        $this->encoderFactory = $encoderFactory;$/;"	v
+encoderFactory	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php	/^    private $encoderFactory;$/;"	v
+encoderFactory	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^        $this->encoderFactory = $encoderFactory;$/;"	v
+encoderFactory	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^    private $encoderFactory;$/;"	v
+eraseCredentials	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    public function eraseCredentials()$/;"	f
+eraseCredentials	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function eraseCredentials()$/;"	f
+error	src/Acme/DemoBundle/Controller/SecuredController.php	/^            $error = $request->attributes->get(SecurityContext::AUTHENTICATION_ERROR);$/;"	v
+error	src/Acme/DemoBundle/Controller/SecuredController.php	/^            $error = $request->getSession()->get(SecurityContext::AUTHENTICATION_ERROR);$/;"	v
+ex	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^            $ex = new AuthenticationServiceException($repositoryProblem->getMessage(), 0, $repositoryProblem);$/;"	v
+execute	src/Acme/DemoBundle/Command/HelloWorldCommand.php	/^    protected function execute(InputInterface $input, OutputInterface $output)$/;"	f
+extension	src/Acme/DemoBundle/EventListener/ControllerListener.php	/^        $this->extension = $extension;$/;"	v
+extension	src/Acme/DemoBundle/EventListener/ControllerListener.php	/^    protected $extension;$/;"	v
+form	src/Acme/DemoBundle/Controller/DemoController.php	/^        $form = $this->createForm(new ContactType());$/;"	v
+form	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $form = $crawler->selectButton('Login')->form(array('_username' => 'admin', '_password' => 'adminpass'));$/;"	v
+getAlias	src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php	/^    public function getAlias()$/;"	f
+getAttribute	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function getAttribute($name)$/;"	f
+getAttributes	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function getAttributes()$/;"	f
+getCategories	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^    public function getCategories()$/;"	f
+getCategory	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^    public function getCategory($category)$/;"	f
+getCode	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    public function getCode($template)$/;"	f
+getConfigTreeBuilder	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/Configuration.php	/^    public function getConfigTreeBuilder()$/;"	f
+getControllerCode	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    protected function getControllerCode()$/;"	f
+getFunctions	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    public function getFunctions()$/;"	f
+getId	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    public function getId()$/;"	f
+getName	src/Acme/DemoBundle/Form/ContactType.php	/^    public function getName()$/;"	f
+getName	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    public function getName()$/;"	f
+getPassword	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    public function getPassword()$/;"	f
+getRoles	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    public function getRoles()$/;"	f
+getRoles	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function getRoles()$/;"	f
+getSalt	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    public function getSalt()$/;"	f
+getTemplateCode	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    protected function getTemplateCode($template)$/;"	f
+getUser	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function getUser()$/;"	f
+getUsername	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    public function getUsername()$/;"	f
+getUsername	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function getUsername()$/;"	f
+getVideo	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^    public function getVideo($video)$/;"	f
+getVideosForCategory	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^    public function getVideosForCategory($category)$/;"	f
+hasAttribute	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function hasAttribute($name)$/;"	f
+hasUserChanged	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    private function hasUserChanged(UserInterface $user)$/;"	f
+helloAction	src/Acme/DemoBundle/Controller/DemoController.php	/^    public function helloAction($name)$/;"	f
+helloAction	src/Acme/DemoBundle/Controller/SecuredController.php	/^    public function helloAction($name)$/;"	f
+helloadminAction	src/Acme/DemoBundle/Controller/SecuredController.php	/^    public function helloadminAction($name)$/;"	f
+id	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^        $this->id = $id;$/;"	v
+id	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    private $id;$/;"	v
+images	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $images = $/;"	v
+indexAction	src/Acme/DemoBundle/Controller/DemoController.php	/^    public function indexAction()$/;"	f
+indexAction	src/Acme/DemoBundle/Controller/WelcomeController.php	/^    public function indexAction()$/;"	f
+indexAction	src/AppBundle/Controller/DefaultController.php	/^    public function indexAction()$/;"	f
+indexAction	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^    public function indexAction()$/;"	f
+isAuthenticated	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function isAuthenticated()$/;"	f
+isPasswordValid	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^    public function isPasswordValid($encoded, $raw, $salt)$/;"	f
+isPasswordValid	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/UserPasswordEncoder.php	/^    public function isPasswordValid(UserInterface $user, $raw)$/;"	f
+iterations	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^        $this->iterations = $iterations;$/;"	v
+iterations	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^    private $iterations;$/;"	v
+jsonUser	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^        $jsonUser = file_get_contents('http:\/\/clients\/clients?email='.$username);$/;"	v
+kernel	web/app_dev.php	/^$kernel = new AppKernel('dev', true);$/;"	v
+link	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $link = $crawler->selectLink('Hello resource secured')->link();$/;"	v
+load	src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php	/^    public function load(array $configs, ContainerBuilder $container)$/;"	f
+load	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/DigiclicFrontArchiveMediaExtension.php	/^    public function load(array $configs, ContainerBuilder $container)$/;"	f
+loadUserByUsername	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^    public function loadUserByUsername($username)$/;"	f
+loader	src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php	/^        $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'\/..\/Resources\/config'));$/;"	v
+loader	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $this->loader = $loader;$/;"	v
+loader	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    protected $loader;$/;"	v
+loader	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/DigiclicFrontArchiveMediaExtension.php	/^        $loader = new Loader\\XmlFileLoader($container, new FileLocator(__DIR__.'\/..\/Resources\/config'));$/;"	v
+loader	web/app_dev.php	/^$loader = require_once __DIR__.'\/..\/app\/bootstrap.php.cache';$/;"	v
+loginAction	src/Acme/DemoBundle/Controller/SecuredController.php	/^    public function loginAction(Request $request)$/;"	f
+loginAction	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^    public function loginAction()$/;"	f
+logoutAction	src/Acme/DemoBundle/Controller/SecuredController.php	/^    public function logoutAction()$/;"	f
+m	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $m = $r->getMethod($this->controller[1]);$/;"	v
+mailer	src/Acme/DemoBundle/Controller/DemoController.php	/^            $mailer = $this->get('mailer');$/;"	v
+onKernelController	src/Acme/DemoBundle/EventListener/ControllerListener.php	/^    public function onKernelController(FilterControllerEvent $event)$/;"	f
+password	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^        $this->password = $password;$/;"	v
+password	src/Digiclic/FrontArchiveMediaBundle/Providers/Client.php	/^    private $password;$/;"	v
+r	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $r = new \\ReflectionClass($class);$/;"	v
+refreshUser	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^    public function refreshUser(UserInterface $user)$/;"	f
+request	web/app_dev.php	/^$request = Request::createFromGlobals();$/;"	v
+response	web/app_dev.php	/^$response = $kernel->handle($request);$/;"	v
+retrieveUser	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^    protected function retrieveUser($username, UsernamePasswordToken $token)$/;"	f
+role	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^                $role = new Role($role);$/;"	v
+roles	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^        $roles = array();$/;"	v
+roles	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    private $roles = array();$/;"	v
+rootNode	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/Configuration.php	/^        $rootNode = $treeBuilder->root('digiclic_front_archive_media');$/;"	v
+salted	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/MessageDigestPasswordEncoder.php	/^        $salted = $this->mergePasswordAndSalt($raw, $salt);$/;"	v
+securityCheck	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^    public function securityCheck()$/;"	f
+securityCheckAction	src/Acme/DemoBundle/Controller/SecuredController.php	/^    public function securityCheckAction()$/;"	f
+securityContext	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^        $this->securityContext = $securityContext;$/;"	v
+securityContext	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^    private $securityContext;$/;"	v
+serialize	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function serialize()$/;"	f
+setAttribute	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function setAttribute($name, $value)$/;"	f
+setAttributes	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function setAttributes(array $attributes)$/;"	f
+setAuthenticated	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function setAuthenticated($authenticated)$/;"	f
+setController	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^    public function setController($controller)$/;"	f
+setUser	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function setUser($user)$/;"	f
+supportsClass	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^    public function supportsClass($class)$/;"	f
+template	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $template = htmlspecialchars($this->getTemplateCode($template), ENT_QUOTES, 'UTF-8');$/;"	v
+template	src/Acme/DemoBundle/Twig/Extension/DemoExtension.php	/^        $template = str_replace('{% set code = code(_self) %}', '', $template);$/;"	v
+testIndex	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^    public function testIndex()$/;"	f
+testIndex	src/AppBundle/Tests/Controller/DefaultControllerTest.php	/^    public function testIndex()$/;"	f
+testIndex	src/Digiclic/FrontArchiveMediaBundle/Tests/Controller/DefaultControllerTest.php	/^    public function testIndex()$/;"	f
+testSecureSection	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^    public function testSecureSection()$/;"	f
+toReturn	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^        $toReturn = json_decode(file_get_contents($this->base_path.'\/clients\/'.$this->client_id.'\/videos\/'.$video), true);$/;"	v
+treeBuilder	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/Configuration.php	/^        $treeBuilder = new TreeBuilder();$/;"	v
+unserialize	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function unserialize($serialized)$/;"	f
+user	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^        $user = json_decode($jsonUser, true);$/;"	v
+user	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^            $user = $this->userProvider->loadUserByUsername($username);$/;"	v
+user	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^        $user = $token->getUser();$/;"	v
+user	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^        $this->user = $user;$/;"	v
+user	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    private $user;$/;"	v
+user	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^        $user = $this->securityContext->getToken()->getUser();$/;"	v
+userProvider	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^        $this->userProvider = $userProvider;$/;"	v
+userProvider	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Provider/DaoAuthenticationProvider.php	/^    private $userProvider;$/;"	v
+validate	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^    public function validate($password, Constraint $constraint)$/;"	f
+video	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $video = $this->get('clients_service')->getVideo($video);$/;"	v
+videoAction	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^    public function videoAction($video)$/;"	f
+videos	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $videos = $this->get('clients_service')->getVideosForCategory($category);$/;"	v

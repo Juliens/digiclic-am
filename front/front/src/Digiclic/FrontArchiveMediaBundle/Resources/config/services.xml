@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="client_provider" class="Digiclic\FrontArchiveMediaBundle\Providers\ClientsProvider">
+        </service>
+        <service id="clients_service" class="Digiclic\FrontArchiveMediaBundle\Services\ClientsService">
+            <argument>http://clients/index.php</argument>
+            <argument type="service" id="security.context" />
+        </service>
+    </services>
+</container>

@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<table class="table">
+<tbody>
+<tr>
+<td>Titre du Film</td>
+<td>{{ video.titre|default('') }}</td>
+</tr>
+<tr>
+<td>Résumé / Description :</td>
+<td>{{ video.description|default('') }}</td>
+</tr>
+<tr>
+<td>Numéro d’identification</td>
+<td>{{ video.identification|default('') }}</td>
+</tr>
+<tr>
+<td>Réalisation :</td>
+<td>{{ video.realisation|default('') }}</td>
+</tr>
+<tr>
+<td>Production :</td>
+<td>{{ video.production|default('') }}</td>
+</tr>
+<tr>
+<td>Type de document :</td>
+<td>{{ video.type|default('') }}</td>
+</tr>
+<tr>
+<td>Source d’origine :</td>
+<td>{{ video.source|default('') }}</td>
+</tr>
+<tr>
+<td>Date du Film</td>
+<td>{{ video.date|default('') }}</td>
+</tr>
+<tr>
+<td>Durée :</td>
+<td>{{ video.duree|default('') }}</td>
+</tr>
+<tr>
+<td>Téléchargement format web</td>
+<td> <a href="http://archives-media.com/FTP/video-telecharger.zip"><img class=" size-full wp-image-587 alignleft" src="http://archives-media.com/wp-content/medias/2015/04/bouton-telecharger.png" alt="bouton-telecharger" width="182" height="42" /></a></td>
+</tr>
+<tr>
+<td>Téléchargement format natif</td>
+<td> <a href="http://archives-media.com/FTP/video-telecharger.zip"><img class=" size-full wp-image-587 alignleft" src="http://archives-media.com/wp-content/medias/2015/04/bouton-telecharger.png" alt="bouton-telecharger" width="182" height="42" /></a></td>
+</tr>
+<tr>
+<td>Document complémentaire</td>
+<td> non</td>
+</tr>
+<tr>
+<td>Mots clés</td>
+<td></td>
+</tr>
+<tr>
+<td> Crée liens de Téléchargement</td>
+<td> <a title="lien de telechargement" href="http://archives-media.com/lien-de-telechargement/"><img class=" size-full wp-image-1025 alignleft" src="http://archives-media.com/wp-content/medias/2015/04/bouton-cree-liens.png" alt="bouton-cree-liens" width="182" height="42" /></a></td>
+</tr>
+</tbody>
+</table>
+{% endblock %}

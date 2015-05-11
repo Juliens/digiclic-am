@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CategoriesRepository	src/Clients/CategoriesRepository.php	/^interface CategoriesRepository$/;"	i
+Category	src/Clients/Category.php	/^class Category$/;"	c
+Client	src/Clients/Client.php	/^class Client$/;"	c
+ClientsRepository	src/Clients/ClientsRepository.php	/^interface ClientsRepository$/;"	i
+MongoCategoriesRepository	src/Clients/MongoCategoriesRepository.php	/^class MongoCategoriesRepository implements CategoriesRepository$/;"	c
+MongoClientsRepository	src/Clients/MongoClientRepository.php	/^class MongoClientsRepository implements ClientsRepository$/;"	c
+MongoClientsRepository	src/Clients/MongoClientsRepository.php	/^class MongoClientsRepository implements ClientsRepository$/;"	c
+MongoVideosRepository	src/Videos/MongoVideosRepository.php	/^class MongoVideosRepository implements VideosRepository$/;"	c
+Video	src/Videos/Video.php	/^class Video$/;"	c
+__construct	src/Clients/MongoCategoriesRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
+__construct	src/Clients/MongoClientRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
+__construct	src/Clients/MongoClientsRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
+__construct	src/Videos/MongoVideosRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
+adresse	src/Clients/Client.php	/^    public $adresse;$/;"	v
+app	index.php	/^$app = new Silex\\Application(); $/;"	v
+baseDir	vendor/composer/autoload_psr4.php	/^$baseDir = dirname($vendorDir);$/;"	v
+categorie	src/Videos/Video.php	/^    public $categorie;$/;"	v
+categorie	videos.php	/^    $categorie = $app['request']->get('categorie');$/;"	v
+category	index.php	/^    $category = $app['repository.categories']->fetchToCategory($data);$/;"	v
+category	index.php	/^    $category = $app['repository.categories']->insert($category);$/;"	v
+category	src/Clients/MongoCategoriesRepository.php	/^        $category = new Category();$/;"	v
+client	index.php	/^    $client = $app['repository']->fetchToClient($data);$/;"	v
+client	index.php	/^    $client = $app['repository']->insert($client);$/;"	v
+client	src/Clients/MongoClientRepository.php	/^        $client = new Client();$/;"	v
+client	src/Clients/MongoClientsRepository.php	/^        $client = new Client();$/;"	v
+client_id	src/Clients/Category.php	/^    public $client_id;$/;"	v
+collection	src/Clients/MongoCategoriesRepository.php	/^        $this->collection = $collection;$/;"	v
+collection	src/Clients/MongoCategoriesRepository.php	/^    private $collection;$/;"	v
+collection	src/Clients/MongoClientRepository.php	/^        $this->collection = $collection;$/;"	v
+collection	src/Clients/MongoClientRepository.php	/^    private $collection;$/;"	v
+collection	src/Clients/MongoClientsRepository.php	/^        $this->collection = $collection;$/;"	v
+collection	src/Clients/MongoClientsRepository.php	/^    private $collection;$/;"	v
+collection	src/Videos/MongoVideosRepository.php	/^        $this->collection = $collection;$/;"	v
+collection	src/Videos/MongoVideosRepository.php	/^    private $collection;$/;"	v
+data	index.php	/^    $data = array_intersect_key($data, array_flip(array('nom', 'adresse')));$/;"	v
+data	index.php	/^    $data = json_decode($app['request']->getContent(), true);$/;"	v
+data	src/Videos/MongoVideosRepository.php	/^            $data = (object)$data;$/;"	v
+data	videos.php	/^    $data = json_decode($app['request']->getContent());$/;"	v
+description	src/Videos/Video.php	/^    public $description;$/;"	v
+duree	src/Videos/Video.php	/^    public $duree;$/;"	v
+elem	src/Clients/MongoCategoriesRepository.php	/^        $elem = $this->collection->findOne(array('_id'=>new \\MongoId($id)));$/;"	v
+elem	src/Clients/MongoClientRepository.php	/^        $elem = $this->collection->findOne(array('_id'=>new \\MongoId($id)));$/;"	v
+elem	src/Clients/MongoClientRepository.php	/^        $elem = $this->get($id);$/;"	v
+elem	src/Clients/MongoClientsRepository.php	/^        $elem = $this->collection->findOne(array('_id'=>new \\MongoId($id)));$/;"	v
+elem	src/Clients/MongoClientsRepository.php	/^        $elem = $this->get($id);$/;"	v
+elem	src/Videos/MongoVideosRepository.php	/^        $elem = $this->collection->findOne(array('_id'=>new \\MongoId($id)));$/;"	v
+email	index.php	/^    $email = $app['request']->get('email');$/;"	v
+email	src/Clients/Client.php	/^    public $email;$/;"	v
+fetchToCategory	src/Clients/MongoCategoriesRepository.php	/^    public function fetchToCategory($data)$/;"	f
+fetchToClient	src/Clients/MongoClientsRepository.php	/^    public function fetchToClient($elem)$/;"	f
+fetchToVideo	src/Videos/MongoVideosRepository.php	/^    public function fetchToVideo($data)$/;"	f
+findAll	src/Clients/ClientsRepository.php	/^    public function findAll();$/;"	f
+findAll	src/Clients/MongoClientRepository.php	/^    public function findAll()$/;"	f
+findAll	src/Clients/MongoClientsRepository.php	/^    public function findAll()$/;"	f
+findAll	src/Videos/MongoVideosRepository.php	/^    public function findAll()$/;"	f
+findByCategorie	src/Videos/MongoVideosRepository.php	/^    public function findByCategorie($categorie_id)$/;"	f
+findByEmail	src/Clients/ClientsRepository.php	/^    public function findByEmail($email);$/;"	f
+findByEmail	src/Clients/MongoClientsRepository.php	/^    public function findByEmail($email)$/;"	f
+findForClient	src/Clients/CategoriesRepository.php	/^    public function findForClient($id);$/;"	f
+findForClient	src/Clients/MongoCategoriesRepository.php	/^    public function findForClient($id)$/;"	f
+get	src/Clients/ClientsRepository.php	/^    public function get($id);$/;"	f
+get	src/Clients/MongoCategoriesRepository.php	/^    public function get($id)$/;"	f
+get	src/Clients/MongoClientRepository.php	/^    public function get($id)$/;"	f
+get	src/Clients/MongoClientsRepository.php	/^    public function get($id)$/;"	f
+get	src/Videos/MongoVideosRepository.php	/^    public function get($id)$/;"	f
+id	src/Clients/Category.php	/^    public $id;$/;"	v
+id	src/Clients/Client.php	/^    public $id;$/;"	v
+id	src/Videos/Video.php	/^    public $id;$/;"	v
+identification	src/Videos/Video.php	/^    public $identification;$/;"	v
+insert	src/Clients/ClientsRepository.php	/^    public function insert(Client $client);$/;"	f
+insert	src/Clients/MongoCategoriesRepository.php	/^    public function insert(Category $category)$/;"	f
+insert	src/Clients/MongoClientRepository.php	/^    public function insert(Client $client)$/;"	f
+insert	src/Clients/MongoClientsRepository.php	/^    public function insert(Client $client)$/;"	f
+insert	src/Videos/MongoVideosRepository.php	/^    public function insert(Video $video)$/;"	f
+logo	src/Clients/Category.php	/^    public $logo;$/;"	v
+m	index.php	/^    $m = new MongoClient( "mongodb:\/\/db:27017"); \/\/ connect$/;"	v
+nom	src/Clients/Category.php	/^    public $nom;$/;"	v
+nom	src/Clients/Client.php	/^    public $nom;$/;"	v
+nom	src/Videos/Video.php	/^    public $nom;$/;"	v
+password	src/Clients/Client.php	/^    public $password;$/;"	v
+production	src/Videos/Video.php	/^    public $production;$/;"	v
+realisation	src/Videos/Video.php	/^    public $realisation;$/;"	v
+source	src/Videos/Video.php	/^    public $source;$/;"	v
+titre	src/Videos/Video.php	/^    public $titre;$/;"	v
+toReturn	src/Clients/MongoCategoriesRepository.php	/^        $toReturn = array();$/;"	v
+toReturn	src/Clients/MongoClientsRepository.php	/^        $toReturn = array();$/;"	v
+toReturn	src/Videos/MongoVideosRepository.php	/^        $toReturn = array();$/;"	v
+type	src/Videos/Video.php	/^    public $type;$/;"	v
+update	src/Clients/ClientsRepository.php	/^    public function update(Client $client);$/;"	f
+update	src/Clients/MongoClientRepository.php	/^    public function update(Client $client)$/;"	f
+update	src/Clients/MongoClientsRepository.php	/^    public function update(Client $client)$/;"	f
+vendorDir	vendor/composer/autoload_psr4.php	/^$vendorDir = dirname(dirname(__FILE__));$/;"	v
+video	src/Videos/MongoVideosRepository.php	/^        $video = new Video();$/;"	v
+video	videos.php	/^    $video = $app['repository_factory']->getRepositoryForClient($client_id)->fetchToVideo($data);$/;"	v
+video	videos.php	/^    $video = $app['repository_factory']->getRepositoryForClient($client_id)->insert($video);$/;"	v

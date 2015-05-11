@@ -6,12 +6,27 @@ db:
 
 clients:
     build: ./clients
+    links:
+       - db
+    ###DEV
+    ports:
+       - "81:80"
+    volumes:
+        - ./clients/app:/root/app
+
+front:
+    build: ./front
+    ports:
+       - "80:80"
+    links:
+       - clients 
+    ###DEV
+    volumes:
+        - ./front/front:/root/symfony
         
-search:
-    build: ./search
-
-share:
-    build: ./share
-
-videos:
-    build: ./videos
+#search:
+#    build: ./search
+#
+#share:
+#    build: ./share
+#

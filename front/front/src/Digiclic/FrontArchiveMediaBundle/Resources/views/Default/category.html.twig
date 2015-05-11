@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<ul class="media-list">
+{% for video in videos %}
+  <li class="media">
+    <div class="media-left">
+      <a href="{{ path('video', {video:video.id}) }}">
+        <img class="media-object" height="152px"  src="http://archives-media.com/wp-content/medias/2015/04/aussoisEnMaurrienne.jpg" alt="..." />
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">{{ video.titre }}</h4>
+{{ video.description }}
+    </div>
+  </li>
+{% endfor %}
+</ul>
+{% endblock %}
