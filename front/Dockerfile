@@ -1,4 +1,5 @@
 FROM php
+RUN apt-get update && apt-get install -y libssl-dev git
 WORKDIR /root/symfony
 COPY ./config /usr/local/etc/php/conf.d
 COPY ./front /root/symfony
