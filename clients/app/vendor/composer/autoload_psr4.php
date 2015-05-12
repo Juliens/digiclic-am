@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Videos\\' => array($baseDir . '/src/Videos'),
+    'Cocur\\Slugify\\' => array($vendorDir . '/cocur/slugify/src'),
     'Clients\\' => array($baseDir . '/src/Clients'),
 );

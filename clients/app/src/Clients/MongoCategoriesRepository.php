@@ -30,6 +30,17 @@ class MongoCategoriesRepository implements CategoriesRepository
         return $this->fetchToCategory($elem);
     }
 
+    public function findBySlugForClient($slug, $client_id)
+    {
+        $toReturn = array();
+
+        $elems = $this->collection->find(array('client_id'=>$client_id, 'slug'=>$slug));
+        foreach ($elems as $data) {
+            $toReturn[] = $this->fetchToCategory($data);
+        }
+        return $toReturn;
+    }
+
     public function insert(Category $category)
     {
         $this->collection->insert($category);
@@ -45,6 +56,7 @@ class MongoCategoriesRepository implements CategoriesRepository
         }
         $category->nom = $data['nom'];
         $category->logo = $data['logo'];
+        $category->slug = $data['slug'];
         $category->client_id = $data['client_id'];
         return $category;
     }

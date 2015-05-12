@@ -8,5 +8,6 @@ class Category
     public $nom;
     public $logo;
     public $client_id;
+    public $slug;
 }
 

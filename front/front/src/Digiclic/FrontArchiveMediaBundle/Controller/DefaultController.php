@@ -62,7 +62,7 @@ class DefaultController extends Controller
         }
 
         $category_object = $this->get('clients_service')->getCategory($category);
-        $videos = $this->get('clients_service')->getVideosForCategory($category);
+        $videos = $this->get('clients_service')->getVideosForCategory($category_object['id']);
         return array('videos'=>$videos, 'category'=>$category_object, 'categories'=>$categories);
     }
 

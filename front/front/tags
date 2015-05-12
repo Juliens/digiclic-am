@@ -152,6 +152,7 @@ iterations	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Encoder/Me
 jsonUser	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^        $jsonUser = file_get_contents('http:\/\/clients\/clients?email='.$username);$/;"	v
 kernel	web/app_dev.php	/^$kernel = new AppKernel('dev', true);$/;"	v
 link	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^        $link = $crawler->selectLink('Hello resource secured')->link();$/;"	v
+list	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^        $list = json_decode(file_get_contents($this->base_path.'\/clients\/'.$this->client_id.'\/categories?slug='.$category), true);$/;"	v
 load	src/Acme/DemoBundle/DependencyInjection/AcmeDemoExtension.php	/^    public function load(array $configs, ContainerBuilder $container)$/;"	f
 load	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/DigiclicFrontArchiveMediaExtension.php	/^    public function load(array $configs, ContainerBuilder $container)$/;"	f
 loadUserByUsername	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^    public function loadUserByUsername($username)$/;"	f
@@ -195,7 +196,7 @@ testIndex	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^    publ
 testIndex	src/AppBundle/Tests/Controller/DefaultControllerTest.php	/^    public function testIndex()$/;"	f
 testIndex	src/Digiclic/FrontArchiveMediaBundle/Tests/Controller/DefaultControllerTest.php	/^    public function testIndex()$/;"	f
 testSecureSection	src/Acme/DemoBundle/Tests/Controller/DemoControllerTest.php	/^    public function testSecureSection()$/;"	f
-toReturn	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^        $toReturn = json_decode(file_get_contents($this->base_path.'\/clients\/'.$this->client_id.'\/videos\/'.$video), true);$/;"	v
+toReturn	src/Digiclic/FrontArchiveMediaBundle/Services/ClientsService.php	/^        $toReturn = json_decode(file_get_contents($this->base_path.'\/clients\/'.$this->client_id.'\/videos?slug='.$video), true);$/;"	v
 treeBuilder	src/Digiclic/FrontArchiveMediaBundle/DependencyInjection/Configuration.php	/^        $treeBuilder = new TreeBuilder();$/;"	v
 unserialize	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authentication/Token/AbstractToken.php	/^    public function unserialize($serialized)$/;"	f
 user	src/Digiclic/FrontArchiveMediaBundle/Providers/ClientsProvider.php	/^        $user = json_decode($jsonUser, true);$/;"	v
@@ -209,4 +210,4 @@ userProvider	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Authenti
 validate	vendor/symfony/symfony/src/Symfony/Component/Security/Core/Validator/Constraints/UserPasswordValidator.php	/^    public function validate($password, Constraint $constraint)$/;"	f
 video	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $video = $this->get('clients_service')->getVideo($video);$/;"	v
 videoAction	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^    public function videoAction($video)$/;"	f
-videos	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $videos = $this->get('clients_service')->getVideosForCategory($category);$/;"	v
+videos	src/Digiclic/FrontArchiveMediaBundle/Controller/DefaultController.php	/^        $videos = $this->get('clients_service')->getVideosForCategory($category_object['id']);$/;"	v

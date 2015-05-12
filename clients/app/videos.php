@@ -4,10 +4,14 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Videos\Video;
 
 $app['repository_factory'] = $app->share(function ($app) {
-    return new Videos\VideosRepositoryFactory();
+    return new Videos\VideosRepositoryFactory($app['slugify']);
 });
 
 $app->get('/clients/{client_id}/videos', function($client_id) use($app) { 
+    $slug = $app['request']->get('slug');
+    if ($slug!=null) {
+        return new JsonResponse($app['repository_factory']->getRepositoryForClient($client_id)->findBySlug($slug));
+    }
     $categorie = $app['request']->get('categorie');
     if ($categorie!=null) {
         return new JsonResponse($app['repository_factory']->getRepositoryForClient($client_id)->findByCategorie($categorie));

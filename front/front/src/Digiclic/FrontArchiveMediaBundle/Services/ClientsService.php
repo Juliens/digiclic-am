@@ -20,13 +20,18 @@ class ClientsService
 
     public function getCategory($category)
     {
-        return json_decode(file_get_contents($this->base_path.'/clients/'.$this->client_id.'/categories/'.$category), true);
+        $list = json_decode(file_get_contents($this->base_path.'/clients/'.$this->client_id.'/categories?slug='.$category), true);
+        if (isset($list[0])) {
+            return $list[0];
+        }
     }
 
     public function getVideo($video)
     {
-        $toReturn = json_decode(file_get_contents($this->base_path.'/clients/'.$this->client_id.'/videos/'.$video), true);
-        return $toReturn;
+        $toReturn = json_decode(file_get_contents($this->base_path.'/clients/'.$this->client_id.'/videos?slug='.$video), true);
+        if (isset($toReturn[0])) {
+            return $toReturn[0];
+        }
     }
 
     public function getVideosForCategory($category)

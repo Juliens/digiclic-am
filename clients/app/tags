@@ -13,10 +13,12 @@ MongoClientsRepository	src/Clients/MongoClientRepository.php	/^class MongoClient
 MongoClientsRepository	src/Clients/MongoClientsRepository.php	/^class MongoClientsRepository implements ClientsRepository$/;"	c
 MongoVideosRepository	src/Videos/MongoVideosRepository.php	/^class MongoVideosRepository implements VideosRepository$/;"	c
 Video	src/Videos/Video.php	/^class Video$/;"	c
+VideosRepositoryFactory	src/Videos/VideosRepositoryFactory.php	/^class VideosRepositoryFactory$/;"	c
 __construct	src/Clients/MongoCategoriesRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
 __construct	src/Clients/MongoClientRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
 __construct	src/Clients/MongoClientsRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
-__construct	src/Videos/MongoVideosRepository.php	/^    public function __construct(\\MongoCollection $collection)$/;"	f
+__construct	src/Videos/MongoVideosRepository.php	/^    public function __construct(\\MongoCollection $collection, $slugify)$/;"	f
+__construct	src/Videos/VideosRepositoryFactory.php	/^    public function __construct($slugify)$/;"	f
 adresse	src/Clients/Client.php	/^    public $adresse;$/;"	v
 app	index.php	/^$app = new Silex\\Application(); $/;"	v
 baseDir	vendor/composer/autoload_psr4.php	/^$baseDir = dirname($vendorDir);$/;"	v
@@ -38,6 +40,8 @@ collection	src/Clients/MongoClientsRepository.php	/^        $this->collection = 
 collection	src/Clients/MongoClientsRepository.php	/^    private $collection;$/;"	v
 collection	src/Videos/MongoVideosRepository.php	/^        $this->collection = $collection;$/;"	v
 collection	src/Videos/MongoVideosRepository.php	/^    private $collection;$/;"	v
+collection	src/Videos/VideosRepositoryFactory.php	/^        $collection = $m->videos_db->$collection_name;$/;"	v
+collection_name	src/Videos/VideosRepositoryFactory.php	/^        $collection_name = 'videos_'.$client_id;$/;"	v
 data	index.php	/^    $data = array_intersect_key($data, array_flip(array('nom', 'adresse')));$/;"	v
 data	index.php	/^    $data = json_decode($app['request']->getContent(), true);$/;"	v
 data	src/Videos/MongoVideosRepository.php	/^            $data = (object)$data;$/;"	v
@@ -50,6 +54,8 @@ elem	src/Clients/MongoClientRepository.php	/^        $elem = $this->get($id);$/;
 elem	src/Clients/MongoClientsRepository.php	/^        $elem = $this->collection->findOne(array('_id'=>new \\MongoId($id)));$/;"	v
 elem	src/Clients/MongoClientsRepository.php	/^        $elem = $this->get($id);$/;"	v
 elem	src/Videos/MongoVideosRepository.php	/^        $elem = $this->collection->findOne(array('_id'=>new \\MongoId($id)));$/;"	v
+elems	src/Clients/MongoCategoriesRepository.php	/^        $elems = $this->collection->find(array('client_id'=>$client_id, 'slug'=>$slug));$/;"	v
+elems	src/Videos/MongoVideosRepository.php	/^        $elems = $this->collection->find(array('slug'=>$slug));$/;"	v
 email	index.php	/^    $email = $app['request']->get('email');$/;"	v
 email	src/Clients/Client.php	/^    public $email;$/;"	v
 fetchToCategory	src/Clients/MongoCategoriesRepository.php	/^    public function fetchToCategory($data)$/;"	f
@@ -62,6 +68,8 @@ findAll	src/Videos/MongoVideosRepository.php	/^    public function findAll()$/;"
 findByCategorie	src/Videos/MongoVideosRepository.php	/^    public function findByCategorie($categorie_id)$/;"	f
 findByEmail	src/Clients/ClientsRepository.php	/^    public function findByEmail($email);$/;"	f
 findByEmail	src/Clients/MongoClientsRepository.php	/^    public function findByEmail($email)$/;"	f
+findBySlug	src/Videos/MongoVideosRepository.php	/^    public function findBySlug($slug)$/;"	f
+findBySlugForClient	src/Clients/MongoCategoriesRepository.php	/^    public function findBySlugForClient($slug, $client_id)$/;"	f
 findForClient	src/Clients/CategoriesRepository.php	/^    public function findForClient($id);$/;"	f
 findForClient	src/Clients/MongoCategoriesRepository.php	/^    public function findForClient($id)$/;"	f
 get	src/Clients/ClientsRepository.php	/^    public function get($id);$/;"	f
@@ -69,6 +77,7 @@ get	src/Clients/MongoCategoriesRepository.php	/^    public function get($id)$/;"
 get	src/Clients/MongoClientRepository.php	/^    public function get($id)$/;"	f
 get	src/Clients/MongoClientsRepository.php	/^    public function get($id)$/;"	f
 get	src/Videos/MongoVideosRepository.php	/^    public function get($id)$/;"	f
+getRepositoryForClient	src/Videos/VideosRepositoryFactory.php	/^    public function getRepositoryForClient($client_id)$/;"	f
 id	src/Clients/Category.php	/^    public $id;$/;"	v
 id	src/Clients/Client.php	/^    public $id;$/;"	v
 id	src/Videos/Video.php	/^    public $id;$/;"	v
@@ -80,12 +89,21 @@ insert	src/Clients/MongoClientsRepository.php	/^    public function insert(Clien
 insert	src/Videos/MongoVideosRepository.php	/^    public function insert(Video $video)$/;"	f
 logo	src/Clients/Category.php	/^    public $logo;$/;"	v
 m	index.php	/^    $m = new MongoClient( "mongodb:\/\/db:27017"); \/\/ connect$/;"	v
+m	src/Videos/VideosRepositoryFactory.php	/^        $m = new \\MongoClient( "mongodb:\/\/db:27017"); \/\/ connect$/;"	v
 nom	src/Clients/Category.php	/^    public $nom;$/;"	v
 nom	src/Clients/Client.php	/^    public $nom;$/;"	v
 nom	src/Videos/Video.php	/^    public $nom;$/;"	v
 password	src/Clients/Client.php	/^    public $password;$/;"	v
 production	src/Videos/Video.php	/^    public $production;$/;"	v
 realisation	src/Videos/Video.php	/^    public $realisation;$/;"	v
+slug	index.php	/^        $slug = $app['request']->get('slug');$/;"	v
+slug	src/Clients/Category.php	/^    public $slug;$/;"	v
+slug	src/Videos/Video.php	/^    public $slug;$/;"	v
+slug	videos.php	/^    $slug = $app['request']->get('slug');$/;"	v
+slugify	src/Videos/MongoVideosRepository.php	/^        $this->slugify = $slugify;$/;"	v
+slugify	src/Videos/MongoVideosRepository.php	/^    private $slugify;$/;"	v
+slugify	src/Videos/VideosRepositoryFactory.php	/^        $this->slugify = $slugify;$/;"	v
+slugify	src/Videos/VideosRepositoryFactory.php	/^    private $slugify;$/;"	v
 source	src/Videos/Video.php	/^    public $source;$/;"	v
 titre	src/Videos/Video.php	/^    public $titre;$/;"	v
 toReturn	src/Clients/MongoCategoriesRepository.php	/^        $toReturn = array();$/;"	v

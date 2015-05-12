@@ -15,6 +15,7 @@ class Video
     public $source;
     public $duree;
     public $categorie;
+    public $slug;
 
     /*
     {

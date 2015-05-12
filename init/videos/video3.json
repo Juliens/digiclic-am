@@ -1,0 +1,12 @@
+{
+    "nom":"Video3",
+    "titre":"Video de test numéro 3",
+    "description":"Video de test dans la catégorie 3",
+    "identification":"CVRVID3",
+    "realisation":"Tatayoyo",
+    "production":"Les Films du plat pays",
+    "type":"TT",
+    "source":"BETA",
+    "duree":"8 min",
+    "categorie":"{{ID}}"
+}

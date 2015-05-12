@@ -1,0 +1,12 @@
+{
+    "nom":"Video2 dans CAT2",
+    "titre":"Video de test numéro 2 dans CAT2",
+    "description":"Video de test dans la catégorie 3",
+    "identification":"CVRVID2C2",
+    "realisation":"Tatayoyo",
+    "production":"Les Films du plat pays",
+    "type":"TT",
+    "source":"BETA",
+    "duree":"8 min",
+    "categorie":"{{ID}}"
+}

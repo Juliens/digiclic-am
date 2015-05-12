@@ -6,8 +6,10 @@ class MongoVideosRepository implements VideosRepository
 {
 
     private $collection;
-    public function __construct(\MongoCollection $collection)
+    private $slugify;
+    public function __construct(\MongoCollection $collection, $slugify)
     {
+        $this->slugify = $slugify;
         $this->collection = $collection;
     }
 
@@ -40,11 +42,23 @@ class MongoVideosRepository implements VideosRepository
 
     public function insert(Video $video)
     {
+        $video->slug = $this->slugify->slugify($video->nom);
         $this->collection->insert($video);
         $video->id = (string)$video->_id;
         unset($video->_id);
         return $video;
 
+    }
+
+    public function findBySlug($slug)
+    {
+        $toReturn = array();
+
+        $elems = $this->collection->find(array('slug'=>$slug));
+        foreach ($elems as $data) {
+            $toReturn[] = $this->fetchToVideo($data);
+        }
+        return $toReturn;
     }
 
     public function fetchToVideo($data)
@@ -66,6 +80,7 @@ class MongoVideosRepository implements VideosRepository
         $video->source = isset($data->source) ? $data->source : null;
         $video->duree = isset($data->duree) ? $data->duree : null;
         $video->categorie = isset($data->categorie) ? $data->categorie : null;
+        $video->slug = isset($data->slug) ? $data->slug : null;
         return $video;
     }
 

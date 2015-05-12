@@ -8,6 +8,10 @@ require_once __DIR__.'/vendor/autoload.php';
 
 $app = new Silex\Application(); 
 
+$app['slugify'] = $app->share(function () {
+    return new Cocur\Slugify\Slugify();
+});
+
 $app['mongo.clients'] = $app->share(function () {
     $m = new MongoClient( "mongodb://db:27017"); // connect
     return $m->clients_db->clients;
@@ -26,7 +30,13 @@ $app['repository.categories'] = $app->share(function ($app) {
     return new Clients\MongoCategoriesRepository($app['mongo.categories']);
 });
 
+$app->get('/reset', function () use ($app) {
+    $m = new MongoClient( "mongodb://db:27017"); // connect
+    $m->clients_db->drop();
+    $m->videos_db->drop();
+    return new JsonResponse("ok");
 
+});
 $app->get('/clients', function() use($app) { 
     $email = $app['request']->get('email');
     if ($email!=null) {
@@ -64,6 +74,10 @@ $app->put('/clients/{id}', function ($id) use ($app) {
 
 $app->get('/clients/{id}/categories', function($id) use($app) { 
     try {
+        $slug = $app['request']->get('slug');
+        if ($slug!=null) {
+            return new JsonResponse($app['repository.categories']->findBySlugForClient($slug, $id));
+        }
         return new JsonResponse($app['repository.categories']->findForClient($id));
     } catch (Exception $e) {
         return new JsonResponse(null, 404);
